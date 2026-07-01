@@ -1,0 +1,40 @@
+title: Hermod
+description: End-to-end encrypted, Apple-native messaging with zero data collection.
+url: https://hermod.khassinx.com
+lang: en
+short_name: Hermod
+
+nav:
+  en:
+    - title: Legal
+      url: /legal/
+  es:
+    - title: Legal
+      url: /es/legal/
+
+footer_nav:
+  en:
+    - title: Security
+      url: /security/
+    - title: Legal
+      url: /legal/
+  es:
+    - title: Seguridad
+      url: /es/security/
+    - title: Legal
+      url: /es/legal/
+
+ui_strings:
+  en:
+    skip_to_main: "Skip to main content"
+    part_of_ecosystem_prefix: "Part of the"
+    part_of_ecosystem_label: "KhassinX ecosystem"
+    ecosystem_url: "https://khassinx.com"
+  es:
+    skip_to_main: "Saltar al contenido principal"
+    part_of_ecosystem_prefix: "Parte del"
+    part_of_ecosystem_label: "ecosistema KhassinX"
+    ecosystem_url: "https://khassinx.com/es/"
+
+include:
+  - .well-known
