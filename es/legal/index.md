@@ -14,6 +14,8 @@ Hermod está construido para que la privacidad sea verificable, no prometida. Es
 - **[Política de Privacidad](/es/legal/privacy/)** — qué recolectamos (nada), cómo viajan los mensajes y tus derechos.
 - **[Términos de Servicio](/es/legal/terms/)** — las reglas para usar Hermod.
 - **[Informe de Transparencia](/es/legal/transparency/)** — arquitectura, modelo de amenazas y los límites honestos de nuestras protecciones.
+- **[Solicitudes Gubernamentales y Legales](/es/legal/requests/)** — cómo manejamos las solicitudes de datos (no tenemos nada) y las solicitudes para retirar Hermod de un país.
+- **[Disponibilidad](/es/legal/availability/)** — dónde está disponible Hermod y un registro factual de cualquier retiro.
 - **[Warrant Canary](/es/legal/canary/)** — declaración permanente sobre solicitudes gubernamentales de datos.
 - **[Proveedores de Infraestructura](/es/legal/subprocessors/)** — las únicas dos empresas cuya infraestructura toca tráfico (cifrado) de Hermod.
 - **[Seguridad y Divulgación Responsable](/es/security/)** — cómo reportar vulnerabilidades.

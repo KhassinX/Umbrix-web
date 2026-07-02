@@ -42,7 +42,7 @@ Hermod has **no servers of its own**. Messages are end-to-end encrypted on your 
 
 ## Government requests
 
-We publish a standing [Warrant Canary](/legal/canary/). Structurally, there is very little to request: we hold no message content, no metadata archive, and no user registry. If we ever receive a legally binding request, we can only produce what we possess — which is designed to be nothing.
+Two different things are sometimes called a "government request", and we treat them separately. **Requests for data** have nothing to reach: we hold no message content, no metadata archive, and no user registry, so we can only produce what we possess — designed to be nothing. **Requests to make Hermod unavailable** in a territory are handled as a neutral compliance matter. Both are described at [Government & Legal Requests](/legal/requests/); withdrawals are recorded at [Availability](/legal/availability/). We publish a standing [Warrant Canary](/legal/canary/).
 
 ## Questions
 
