@@ -8,8 +8,7 @@ canonical_en: /legal/subprocessors/
 canonical_es: /es/legal/subprocessors/
 updated: 2026-07-01
 ---
-<!-- DRAFT — pendiente de revisión legal. "Proveedores de infraestructura" (no "subencargados"):
-     al no procesar nosotros datos personales, la cadena de encargados RGPD no tiene qué procesar. -->
+<!-- DRAFT — aún no publicado. -->
 
 Hermod no recolecta datos personales, así que no existe una cadena de tratamiento en el sentido habitual. Por transparencia total, estas son las **únicas** empresas cuya infraestructura toca tráfico de Hermod:
 

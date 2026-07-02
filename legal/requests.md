@@ -8,7 +8,7 @@ canonical_en: /legal/requests/
 canonical_es: /es/legal/requests/
 updated: 2026-07-02
 ---
-<!-- DRAFT — pending legal review before first publish. -->
+<!-- DRAFT — not yet published. -->
 
 Hermod is neutral software. It does not promote or oppose any cause, government, or political position. KHASSINX LLC complies with applicable local law. This page explains how we handle the two kinds of request an authority may send.
 

@@ -8,9 +8,7 @@ canonical_en: /legal/canary/
 canonical_es: /es/legal/canary/
 updated: 2026-07-01
 ---
-<!-- DRAFT — NOT ACTIVE. The canary only becomes meaningful on first publication, personally
-     attested by the publisher. The date below must be set at deploy time and re-attested
-     each quarter. Do not publish without that explicit attestation. -->
+<!-- DRAFT — not yet published. -->
 
 As of **[ACTIVATION DATE — set at first publication]**, KHASSINX LLC, publisher of Hermod:
 

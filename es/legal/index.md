@@ -7,7 +7,7 @@ lang: es
 canonical_en: /legal/
 canonical_es: /es/legal/
 ---
-<!-- DRAFT — pendiente de revisión legal antes de publicar. -->
+<!-- DRAFT — aún no publicado. -->
 
 Hermod está construido para que la privacidad sea verificable, no prometida. Estos documentos dicen exactamente qué hacemos, qué no podemos hacer y qué aceptas al usarlo.
 

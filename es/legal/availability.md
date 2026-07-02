@@ -8,7 +8,7 @@ canonical_en: /legal/availability/
 canonical_es: /es/legal/availability/
 updated: 2026-07-02
 ---
-<!-- DRAFT — pendiente de revisión legal antes de publicar. -->
+<!-- DRAFT — aún no publicado. -->
 
 Hermod se ofrece donde la mensajería anónima y cifrada de extremo a extremo es legal. La disponibilidad puede cambiar según cambien las leyes. No debilitamos el cifrado para entrar a un mercado ni para permanecer en él.
 

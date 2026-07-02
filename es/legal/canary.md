@@ -8,9 +8,7 @@ canonical_en: /legal/canary/
 canonical_es: /es/legal/canary/
 updated: 2026-07-01
 ---
-<!-- DRAFT — NO ACTIVO. El canary solo cobra sentido en su primera publicación, atestado
-     personalmente por el editor. La fecha de abajo se fija al deployar y se re-atesta
-     cada trimestre. No publicar sin esa atestación explícita. -->
+<!-- DRAFT — aún no publicado. -->
 
 A fecha de **[FECHA DE ACTIVACIÓN — fijar en la primera publicación]**, KHASSINX LLC, editor de Hermod:
 
