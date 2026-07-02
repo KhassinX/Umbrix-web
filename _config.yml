@@ -1,8 +1,21 @@
+# hermod.khassinx.com — Jekyll config (canon: _template/web/templates/base.html + WEB_PROPERTY_SPEC)
+# Marca INDEPENDIENTE (Decisión #8): sin nota de ecosistema en el footer (show_ecosystem_note ausente);
+# la única señal del dueño es la entidad legal © KHASSINX LLC.
 title: Hermod
-description: End-to-end encrypted, Apple-native messaging with zero data collection.
+short_name: Hermod
+description: End-to-end encrypted, Apple-native messaging with zero data collection. No servers, no accounts, no trackers.
 url: https://hermod.khassinx.com
 lang: en
-short_name: Hermod
+locales: [en, es]
+schema_type: app
+org_legal_name: "KHASSINX LLC"
+theme_color_dark: "#0E0E11"
+theme_color_light: "#FAFAF7"
+
+# Layer 2 brand tokens (púrpura provisional — alinear al .icon en el track C1)
+app_tokens_css: /assets/css/hermod-tokens.css
+
+# og_image / favicons / org_logo: se generan desde el AppIcon.icon (track C1). Claves ausentes a propósito.
 
 nav:
   en:
@@ -12,29 +25,49 @@ nav:
     - title: Legal
       url: /es/legal/
 
+# Footer — orden canónico del Legal Trust Hub (WEB_PROPERTY_SPEC §10.3):
+# Privacy · Terms · Legal · Security · Contact.
 footer_nav:
   en:
-    - title: Security
-      url: /security/
+    - title: Privacy
+      url: /legal/privacy/
+    - title: Terms
+      url: /legal/terms/
     - title: Legal
       url: /legal/
+    - title: Security
+      url: /security/
+    - title: Contact
+      url: mailto:hello@khassinx.com
   es:
-    - title: Seguridad
-      url: /es/security/
+    - title: Privacidad
+      url: /es/legal/privacy/
+    - title: Términos
+      url: /es/legal/terms/
     - title: Legal
       url: /es/legal/
+    - title: Seguridad
+      url: /es/security/
+    - title: Contacto
+      url: mailto:hello@khassinx.com
 
 ui_strings:
   en:
     skip_to_main: "Skip to main content"
-    part_of_ecosystem_prefix: "Part of the"
-    part_of_ecosystem_label: "KhassinX ecosystem"
-    ecosystem_url: "https://khassinx.com"
+    last_updated_label: "Last updated"
   es:
     skip_to_main: "Saltar al contenido principal"
-    part_of_ecosystem_prefix: "Parte del"
-    part_of_ecosystem_label: "ecosistema KhassinX"
-    ecosystem_url: "https://khassinx.com/es/"
+    last_updated_label: "Última actualización"
 
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - .gitignore
+
+# Jekyll por default ignora dotfiles/dotdirs. .well-known DEBE servirse
+# (RFC 9116 security.txt requiere path exacto /.well-known/security.txt).
 include:
   - .well-known
