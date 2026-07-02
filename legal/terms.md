@@ -29,7 +29,11 @@ Hermod is rated **17+**. You must be at least 17 years old (or the higher minimu
 
 ## Availability
 
-Hermod is offered only in regions where end-to-end encrypted, anonymous messaging is lawful. Availability may change if the law changes. We won't weaken the encryption to enter a market.
+Hermod is offered only in regions where end-to-end encrypted, anonymous messaging is lawful. Availability may change if the law changes. We won't weaken the encryption to enter a market. Where a competent authority requires it, we make Hermod unavailable in that territory — see [Government & Legal Requests](/legal/requests/) and the [availability record](/legal/availability/).
+
+## Political neutrality
+
+Hermod is neutral software. It does not promote or oppose any cause, government, or political position. KHASSINX LLC complies with applicable local law, including making Hermod unavailable in a territory where a competent authority requires it. Withdrawing from a market is a compliance action, not a statement.
 
 ## Acceptable use
 

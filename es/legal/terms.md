@@ -29,7 +29,11 @@ Hermod tiene clasificación **17+**. Debes tener al menos 17 años (o la edad m�
 
 ## Disponibilidad
 
-Hermod se ofrece solo en regiones donde la mensajería anónima y cifrada de extremo a extremo es legal. La disponibilidad puede cambiar si cambia la ley. No debilitaremos el cifrado para entrar a un mercado.
+Hermod se ofrece solo en regiones donde la mensajería anónima y cifrada de extremo a extremo es legal. La disponibilidad puede cambiar si cambia la ley. No debilitaremos el cifrado para entrar a un mercado. Donde una autoridad competente lo requiera, hacemos que Hermod no esté disponible en ese territorio — ver [Solicitudes Gubernamentales y Legales](/es/legal/requests/) y el [registro de disponibilidad](/es/legal/availability/).
+
+## Neutralidad política
+
+Hermod es software neutral. No promueve ni se opone a ninguna causa, gobierno o postura política. KHASSINX LLC cumple las leyes locales aplicables, incluida la retirada de Hermod de un territorio donde una autoridad competente lo requiere. Retirarse de un mercado es una acción de cumplimiento, no una declaración.
 
 ## Uso aceptable
 
