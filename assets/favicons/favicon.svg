@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- Hermod web favicon — flat 2D composite of the AppIcon.icon layers (no Liquid Glass on web). -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6E2DE8"/>
+      <stop offset="1" stop-color="#45108A"/>
+    </linearGradient>
+    <clipPath id="squircle"><rect width="1024" height="1024" rx="224"/></clipPath>
+  </defs>
+  <g clip-path="url(#squircle)">
+    <rect width="1024" height="1024" fill="url(#bg)"/>
+    <path fill="#F7F5FF" d="M 348 430 V 332 A 164 164 0 0 1 676 332 V 430 H 588 V 332 A 76 76 0 0 0 436 332 V 430 Z"/>
+    <path fill="#F7F5FF" d="M 352 400 H 672 A 150 150 0 0 1 822 550 V 610 A 150 150 0 0 1 672 760 H 470 L 342 852 Q 314 870 322 838 L 342 758 A 150 150 0 0 1 202 610 V 550 A 150 150 0 0 1 352 400 Z"/>
+  </g>
+</svg>

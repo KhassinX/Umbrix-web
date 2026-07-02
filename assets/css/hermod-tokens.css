@@ -7,17 +7,16 @@
  * Source: ~/KhassinX/_template/web/WEB_PROPERTY_SPEC.md §4 (layered brand)
  * + ~/KhassinX/Hermod/design/2026-06-30-hermod-design.md §10 (brand origin).
  *
- * Brand origin: "la burbuja púrpura" = estatus de privacidad real (deep purple
- * APROBADO 2026-06-30; el TONO EXACTO se fija con el .icon en el brand design).
+ * Brand origin: "la burbuja sellada" — burbuja de chat cuyo cuerpo es el cuerpo
+ * de un candado (Hermod ↔ hermético). Aprobado 2026-07-02.
  *
- * ⚠️ PROVISIONAL: estos valores son un deep purple WCAG-AA-safe de trabajo.
- * Al producir el AppIcon.icon (track C1), alinear el accent web al icono
- * (mismo patrón que vellichor ámbar / Khazen teal) y quitar este aviso.
+ * Accent ALINEADO al AppIcon.icon (app/App/AppIcon.icon): gradiente de fondo
+ * #6E2DE8 → #45108A, glifo #F7F5FF. Mismo patrón vellichor: web accent = icon accent.
  *
  * App brand signature (light):
- *   - Purple CTA      #6D28D9  (CTAs, links — WCAG AA on white: ~6.3:1)
- *   - Purple hover    #5B21B6  (active state, darker)
- *   - Purple soft     #F3EFFB  (subtle backgrounds)
+ *   - Purple CTA      #6E2DE8  (CTAs, links — WCAG AA on white: 6.56:1 ✓)
+ *   - Purple hover    #45108A  (active state — el tono inferior del gradiente)
+ *   - Purple soft     #F3EDFE  (subtle backgrounds)
  *   - Purple bright   #8B5CF6  (borders/badges, NOT body text)
  */
 
@@ -36,10 +35,10 @@
   --hermod-text-tertiary: #86868B;
   --hermod-text-disabled: #C7C7CC;
 
-  /* Brand accent — deep purple (provisional hasta C1) */
-  --hermod-accent: #6D28D9;
-  --hermod-accent-hover: #5B21B6;
-  --hermod-accent-soft: #F3EFFB;
+  /* Brand accent — deep purple del AppIcon.icon */
+  --hermod-accent: #6E2DE8;
+  --hermod-accent-hover: #45108A;
+  --hermod-accent-soft: #F3EDFE;
   --hermod-accent-bright: #8B5CF6;
 
   /* Map to Layer 3 primitives */
@@ -67,10 +66,10 @@
     --hermod-text-secondary: #A1A1A6;
     --hermod-text-tertiary: #86868B;
 
-    /* Purple aclarado para AA sobre fondos oscuros (~7.6:1 sobre #000) */
-    --hermod-accent: #A78BFA;
-    --hermod-accent-hover: #C4B5FD;
-    --hermod-accent-soft: #1E1633;
+    /* Purple aclarado — variante dark del icon (WCAG sobre #000: 8.69:1 ✓) */
+    --hermod-accent: #B794FF;
+    --hermod-accent-hover: #CBB2FF;
+    --hermod-accent-soft: #221639;
     --hermod-accent-bright: #8B5CF6;
 
     --color-bg: var(--hermod-bg);
