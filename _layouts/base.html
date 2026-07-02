@@ -1,0 +1,166 @@
+{%- comment -%}
+═══════════════════════════════════════════════════════════════════════════
+  KhassinX — Canonical base.html (Jekyll layout)
+  Superset universal: SEO completo + OG + Twitter Cards + JSON-LD + PWA + a11y.
+  Cada sitio COPIA esto a su `_layouts/base.html` y rellena sus vars en `_config.yml`
+  + front-matter de página. NO contiene contenido de ningún proyecto.
+  Ver: BRAND_SYSTEM.md (visual), web/WEB_PROPERTY_SPEC.md (estructura/CSP/OPSEC),
+       agente seo-specialist (rigor SEO + quality bar Lighthouse).
+
+  _config.yml espera (ejemplo):
+    title: "<App>"                     # la MARCA (wordmark), p.ej. "KhassinX"
+    short_name: "<Marca corta>"        # A2HS / apple-mobile-web-app-title (nunca el <title> largo)
+    description: "<una línea, ≤155 chars>"
+    url: "https://<app>.khassinx.com"
+    lang: en
+    locales: [en, es]                  # idiomas soportados (WEB = EN + ES únicamente)
+    schema_type: app                   # "app" (MobileApplication) | "organization" (apex)
+    org_legal_name: "KHASSINX LLC"     # entidad legal (all-caps) → JSON-LD legalName + footer ©
+    org_founding_date: "2026-06-01"    # opcional, solo schema_type: organization
+    theme_color_dark: "#0E0E11"        # estándar BRAND_SYSTEM §2 (override per-brand)
+    theme_color_light: "#FAFAF7"
+    og_image: "/assets/og/og-image-en.png"   # 1200×630 (generate_web_assets.sh) — share card
+    org_logo: "/assets/favicons/icon-512.png" # cuadrado opaco → JSON-LD Organization logo
+    umbrella_tokens: false             # true solo en el apex umbrella
+    app_tokens_css: "/assets/css/<app>-tokens.css"   # Layer 2 (si per-app)
+    app_store_url: "..."  app_price: "4.99"  app_category: "..."   # si schema_type: app
+  page front-matter opcional: title, description, og_image, canonical_en, canonical_es,
+    seo_title ("Marca — tagline corta" — brand-first para el favorito de la HOME, §4.5), ...
+═══════════════════════════════════════════════════════════════════════════
+{%- endcomment -%}
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {%- comment -%} CSP fallback via meta; los headers reales vienen de Cloudflare Transform Rules (ver WEB_PROPERTY_SPEC) {%- endcomment -%}
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'">
+
+  {%- assign page_title = page.title | default: site.title -%}
+  {%- assign full_title = page_title -%}
+  {%- if page.title -%}{%- assign full_title = page.title | append: ' — ' | append: site.title -%}{%- endif -%}
+  {%- comment -%} seo_title override: la HOME debe ser brand-first para el favorito (WEB_PROPERTY_SPEC §4.5). Front-matter `seo_title: "Marca — tagline corta"` gana sobre el title largo. {%- endcomment -%}
+  {%- if page.seo_title -%}{%- assign full_title = page.seo_title -%}{%- endif -%}
+  {%- assign desc = page.description | default: site.description -%}
+  {%- assign canonical = site.url | append: page.url -%}
+  {%- assign og_image = page.og_image | default: site.og_image -%}
+
+  <title>{{ full_title }}</title>
+  <meta name="description" content="{{ desc }}">
+  <meta name="robots" content="{{ page.robots | default: 'index,follow' }}">
+  <link rel="canonical" href="{{ canonical }}">
+
+  <meta name="theme-color" content="{{ site.theme_color_dark | default: '#0E0E11' }}" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="{{ site.theme_color_light | default: '#FAFAF7' }}" media="(prefers-color-scheme: light)">
+
+  {%- comment -%} ── Open Graph (Facebook, LinkedIn, iMessage) ── {%- endcomment -%}
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:title" content="{{ full_title }}">
+  <meta property="og:description" content="{{ desc }}">
+  <meta property="og:url" content="{{ canonical }}">
+  {%- if og_image %}
+  <meta property="og:image" content="{{ site.url }}{{ og_image }}">
+  <meta property="og:image:secure_url" content="{{ site.url }}{{ og_image }}">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{ page.og_image_alt | default: site.title }}">
+  {%- endif %}
+  <meta property="og:locale" content="{{ page.lang | default: site.lang | default: 'en' }}">
+  {%- for loc in site.locales %}{% unless loc == page.lang %}
+  <meta property="og:locale:alternate" content="{{ loc }}">{% endunless %}{%- endfor %}
+
+  {%- comment -%} ── X / Twitter Cards (el markup sigue siendo `twitter:*`) ── {%- endcomment -%}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ full_title }}">
+  <meta name="twitter:description" content="{{ desc }}">
+  {%- if og_image %}
+  <meta name="twitter:image" content="{{ site.url }}{{ og_image }}">
+  <meta name="twitter:image:alt" content="{{ page.og_image_alt | default: site.title }}">
+  {%- endif %}
+
+  {%- comment -%} ── hreflang: la WEB KhassinX = EN + ES ÚNICAMENTE (decisión 2026-06-04, WEB_PROPERTY_SPEC §7.5). NO agregar otros locales. ── {%- endcomment -%}
+  {%- if page.canonical_en %}<link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.canonical_en }}">{% endif %}
+  {%- if page.canonical_es %}<link rel="alternate" hreflang="es" href="{{ site.url }}{{ page.canonical_es }}">{% endif %}
+  {%- if page.canonical_en %}<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ page.canonical_en }}">{% endif %}
+
+  {%- comment -%} ── Favicons + PWA (set completo: generate_web_assets.sh) ── {%- endcomment -%}
+  <link rel="icon" href="/assets/favicons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+
+  {%- comment -%} ── Apple PWA (Add-to-Home name = apple-mobile-web-app-title). NO MS Tiles legacy (browserconfig/mstile): Edge/Win11 usa manifest+favicon — WEB_PROPERTY_SPEC §4.5. ── {%- endcomment -%}
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="{{ site.short_name | default: site.title }}">
+  <meta name="application-name" content="{{ site.short_name | default: site.title }}">
+
+  {%- comment -%} ── JSON-LD structured data (parametrizado por site.schema_type) ── {%- endcomment -%}
+  {%- if site.schema_type == 'organization' %}
+  <script type="application/ld+json">
+  {%- comment -%} logo = imagen CUADRADA opaca (icon-512), NO el og-image rectangular 1200×630 (Google espera logo cuadrado). Fallback a favicon-32 si no hay org_logo. {%- endcomment -%}
+  {%- assign org_logo = site.org_logo | default: '/assets/favicons/icon-512.png' -%}
+  {"@context":"https://schema.org","@type":"Organization","name":"{{ site.title }}"{% if site.org_legal_name %},"legalName":"{{ site.org_legal_name }}"{% endif %},"url":"{{ site.url }}","logo":"{{ site.url }}{{ org_logo }}"{% if site.org_founding_date %},"foundingDate":"{{ site.org_founding_date }}"{% endif %}}
+  </script>
+  {%- elsif site.schema_type == 'app' %}
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"MobileApplication","name":"{{ site.title }}","operatingSystem":"{{ site.app_os | default: 'iOS, iPadOS, macOS, watchOS' }}","applicationCategory":"{{ site.app_category | default: 'Utility' }}"{% if site.app_store_url %},"downloadUrl":"{{ site.app_store_url }}"{% endif %}{% if site.app_price %},"offers":{"@type":"Offer","price":"{{ site.app_price }}","priceCurrency":"{{ site.app_currency | default: 'USD' }}"}{% endif %},"publisher":{"@type":"Organization","name":"KhassinX","legalName":"KHASSINX LLC","url":"https://khassinx.com"}}
+  </script>
+  {%- endif %}
+
+  {%- comment -%}
+    ── CSS layers (orden BRAND_SYSTEM §1): Layer 1 (umbrella, solo apex) → Layer 2 (per-app rebind) → Layer 3 (primitives) ──
+  {%- endcomment -%}
+  {%- if site.umbrella_tokens %}<link rel="stylesheet" href="/assets/css/tokens.css">{% endif %}
+  {%- if site.app_tokens_css %}<link rel="stylesheet" href="{{ site.app_tokens_css }}">{% endif %}
+  <link rel="stylesheet" href="/assets/css/primitives.css">
+  {%- if page.extra_css %}<link rel="stylesheet" href="{{ page.extra_css }}">{% endif %}
+</head>
+<body>
+  <a class="skip-link" href="#main">{{ site.skip_to_content | default: 'Skip to content' }}</a>
+  <main id="main">
+    {{ content }}
+  </main>
+
+  {%- comment -%}
+    ── Footer canónico (WEB_PROPERTY_SPEC §4) ──
+    Copyright = entidad legal (KHASSINX LLC, all-caps). OPSEC: NUNCA location / nombre del founder.
+    Locale-switcher EN/ES sin JS (mismo patrón que footer-locale-switcher.html).
+  {%- endcomment -%}
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-copyright">© {{ 'now' | date: '%Y' }} {{ site.org_legal_name | default: 'KHASSINX LLC' }}</div>
+      {%- if site.footer_nav %}
+      <nav aria-label="{{ site.footer_nav_label | default: 'Footer' }}">
+        {%- for item in site.footer_nav %}
+        <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        {%- endfor %}
+      </nav>
+      {%- endif %}
+      <div class="locale-switcher" aria-label="{{ site.language_selector_label | default: 'Language selector' }}">
+        {%- if page.lang == 'es' -%}
+        <a href="{{ page.canonical_en | default: '/' | relative_url }}" hreflang="en" lang="en">EN</a>
+        <span aria-hidden="true">·</span>
+        <span aria-current="true" lang="es">ES</span>
+        {%- else -%}
+        <span aria-current="true" lang="en">EN</span>
+        <span aria-hidden="true">·</span>
+        <a href="{{ page.canonical_es | default: '/es/' | relative_url }}" hreflang="es" lang="es">ES</a>
+        {%- endif -%}
+      </div>
+      {%- comment -%} Hermod = marca pública INDEPENDIENTE (Decisión #8): la superficie pública
+      solo muestra la entidad legal (© KHASSINX LLC, arriba), sin link de ecosistema.
+      Gateado por config (show_ecosystem_note) en vez de borrado, para no divergir del canon. {%- endcomment -%}
+      {%- if site.show_ecosystem_note %}
+      <small class="footer-ecosystem">{{ site.ecosystem_note | default: 'Part of the' }} <a href="https://khassinx.com">KhassinX ecosystem</a></small>
+      {%- endif %}
+    </div>
+  </footer>
+</body>
+</html>
