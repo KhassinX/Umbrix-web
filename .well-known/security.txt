@@ -1,8 +1,5 @@
-# KhassinX canonical security.txt (RFC 9116). COPIAR a /.well-known/security.txt.
-# Expires: ISO 8601, < 1 año en el futuro (RFC 9116 recomienda <1y). Reemplazá el placeholder
-# y renová antes de que venza. Reemplazá hermod.khassinx.com por el host real (Canonical).
 Contact: mailto:security@khassinx.com
-Expires: 2027-06-30T00:00:00.000Z8601
+Expires: 2027-06-30T00:00:00.000Z
 Preferred-Languages: en, es
 Canonical: https://hermod.khassinx.com/.well-known/security.txt
 Policy: https://khassinx.com/security/
