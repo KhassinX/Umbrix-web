@@ -8,7 +8,7 @@ canonical_en: /legal/availability/
 canonical_es: /es/legal/availability/
 updated: 2026-07-02
 ---
-<!-- DRAFT — pending legal review before first publish. -->
+<!-- DRAFT — not yet published. -->
 
 Hermod is offered where end-to-end encrypted, anonymous messaging is lawful. Availability can change as laws change. We do not weaken the encryption to enter a market or to remain in one.
 

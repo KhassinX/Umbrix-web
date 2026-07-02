@@ -8,8 +8,7 @@ canonical_en: /legal/terms/
 canonical_es: /es/legal/terms/
 updated: 2026-07-01
 ---
-<!-- DRAFT — pending legal review before first publish. Governing law = State of Florida
-     (confirmed 2026-07-02, decision #7; rationale in umbrella decisions/). Attorney review is still a gate. -->
+<!-- DRAFT — not yet published. -->
 
 ## Acceptance
 

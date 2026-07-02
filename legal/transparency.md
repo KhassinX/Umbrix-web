@@ -8,8 +8,7 @@ canonical_en: /legal/transparency/
 canonical_es: /es/legal/transparency/
 updated: 2026-07-01
 ---
-<!-- DRAFT — pending legal review. Crypto specifics stay at protocol level until the primitive
-     selection is finalized (internal decision) and independently audited pre-launch. -->
+<!-- DRAFT — not yet published. -->
 
 Most privacy policies ask for trust. This report is written so you need as little of it as possible: it describes the architecture, what each party can technically see, and — just as important — what our protections **cannot** do.
 

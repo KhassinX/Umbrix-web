@@ -8,8 +8,7 @@ canonical_en: /legal/subprocessors/
 canonical_es: /es/legal/subprocessors/
 updated: 2026-07-01
 ---
-<!-- DRAFT — pending legal review. "Infrastructure providers" (not "sub-processors"): with no
-     personal data processed by us, the GDPR processor chain has nothing to process. -->
+<!-- DRAFT — not yet published. -->
 
 Hermod collects no personal data, so there is no processing chain in the usual sense. For full transparency, these are the **only** companies whose infrastructure Hermod traffic touches:
 

@@ -8,8 +8,7 @@ canonical_en: /legal/terms/
 canonical_es: /es/legal/terms/
 updated: 2026-07-01
 ---
-<!-- DRAFT — pendiente de revisión legal antes de publicar. Governing law = Estado de Florida
-     (confirmado 2026-07-02, decisión #7; racional en umbrella decisions/). El review del abogado sigue siendo gate. -->
+<!-- DRAFT — aún no publicado. -->
 
 ## Aceptación
 

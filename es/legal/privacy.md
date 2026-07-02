@@ -8,8 +8,7 @@ canonical_en: /legal/privacy/
 canonical_es: /es/legal/privacy/
 updated: 2026-07-01
 ---
-<!-- DRAFT — pendiente de revisión legal antes de publicar. Debe mantenerse alineada, palabra por
-     palabra en sustancia, con la etiqueta del App Store ("Datos no recopilados") y PrivacyInfo.xcprivacy. -->
+<!-- DRAFT — aún no publicado. -->
 
 **Hermod no recolecta datos personales. Ninguno.** Esta política es corta porque genuinamente no hay nada que revelar — y abajo explicamos por qué no tienes que creernos por fe.
 
