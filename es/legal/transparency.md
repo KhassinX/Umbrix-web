@@ -42,7 +42,7 @@ Hermod **no tiene servidores propios**. Los mensajes se cifran de extremo a extr
 
 ## Solicitudes gubernamentales
 
-Publicamos un [Warrant Canary](/es/legal/canary/) permanente. Estructuralmente hay muy poco que solicitar: no retenemos contenido, ni archivo de metadatos, ni registro de usuarios. Si alguna vez recibimos una solicitud legalmente vinculante, solo podemos entregar lo que poseemos — que está diseñado para ser nada.
+A veces se llaman "solicitud gubernamental" a dos cosas distintas, y las tratamos por separado. **Las solicitudes de datos** no tienen nada que alcanzar: no retenemos contenido, ni archivo de metadatos, ni registro de usuarios, así que solo podemos entregar lo que poseemos — diseñado para ser nada. **Las solicitudes para retirar Hermod** de un territorio se manejan como un trámite de cumplimiento neutral. Ambas se describen en [Solicitudes Gubernamentales y Legales](/es/legal/requests/); los retiros se registran en [Disponibilidad](/es/legal/availability/). Publicamos un [Warrant Canary](/es/legal/canary/) permanente.
 
 ## Preguntas
 

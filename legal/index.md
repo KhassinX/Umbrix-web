@@ -14,6 +14,8 @@ Hermod is built so that privacy is verifiable, not promised. These documents say
 - **[Privacy Policy](/legal/privacy/)** — what we collect (nothing), how messages flow, and your rights.
 - **[Terms of Service](/legal/terms/)** — the rules for using Hermod.
 - **[Transparency Report](/legal/transparency/)** — architecture, threat model, and the honest limits of our protections.
+- **[Government & Legal Requests](/legal/requests/)** — how we handle data requests (we hold nothing) and requests to make Hermod unavailable in a country.
+- **[Availability](/legal/availability/)** — where Hermod is available and a factual record of any withdrawal.
 - **[Warrant Canary](/legal/canary/)** — standing statement on government data requests.
 - **[Infrastructure Providers](/legal/subprocessors/)** — the only two companies whose infrastructure touches (encrypted) Hermod traffic.
 - **[Security & Responsible Disclosure](/security/)** — how to report vulnerabilities.
