@@ -30,7 +30,7 @@ Hermod **no tiene servidores propios**. Los mensajes se cifran de extremo a extr
 - **Etiqueta de privacidad vacía.** La etiqueta del App Store dice "Datos no recopilados" — una declaración pública y vinculante revisada por Apple.
 - **Manifiesto de privacidad.** El bundle de la app declara cero tipos de datos recolectados y cero dominios de tracking.
 - **Safety numbers.** Cada conversación expone un código de verificación que ambas partes pueden comparar en persona o por otro canal para descartar interceptación.
-- **Auditoría independiente.** La implementación criptográfica pasará por una auditoría de seguridad independiente antes del lanzamiento público; los resultados se resumirán aquí.
+- **Construido sobre la criptografía de Apple.** Hermod se apoya en CryptoKit de Apple — las mismas primitivas auditadas que Apple usa en sus propios productos — en vez de criptografía casera de bajo nivel, y cada conversación se puede verificar de extremo a extremo con su safety number. Hermod es gratis; no afirmamos una auditoría externa pagada que no hemos hecho.
 
 ## Límites honestos — lee esta sección
 

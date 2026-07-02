@@ -30,7 +30,7 @@ Hermod has **no servers of its own**. Messages are end-to-end encrypted on your 
 - **Empty privacy label.** The App Store label reads "Data Not Collected" — a public, binding declaration reviewed by Apple.
 - **Privacy manifest.** The app bundle declares zero collected data types, zero tracking domains.
 - **Safety numbers.** Each conversation exposes a verification code both parties can compare in person or over another channel to rule out interception.
-- **Independent audit.** The cryptographic implementation will undergo an independent security audit before public launch; results will be summarized here.
+- **Built on Apple's cryptography.** Hermod is built on Apple's CryptoKit — the same audited primitives Apple ships across its own products — rather than homegrown low-level crypto, and every conversation can be verified end-to-end with its safety number. Hermod is free; we don't claim a paid third-party audit we haven't done.
 
 ## Honest limits — read this section
 
