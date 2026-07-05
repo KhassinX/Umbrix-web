@@ -1,0 +1,86 @@
+/*
+ * umbrix-tokens.css — Layer 2 Umbrix brand tokens — Apple-canon + púrpura signature
+ *
+ * Per-app brand for umbrix.khassinx.com. Marca INDEPENDIENTE (Decisión #8):
+ * la web no hereda señales visuales del umbrella, solo la entidad legal.
+ *
+ * Source: ~/KhassinX/_template/web/WEB_PROPERTY_SPEC.md §4 (layered brand)
+ * + ~/KhassinX/Umbrix/design/2026-06-30-umbrix-design.md §10 (brand origin).
+ *
+ * Brand origin: "la burbuja sellada" — burbuja de chat cuyo cuerpo es el cuerpo
+ * de un candado (Umbrix ↔ hermético). Aprobado 2026-07-02.
+ *
+ * Accent ALINEADO al AppIcon.icon (app/App/AppIcon.icon): gradiente de fondo
+ * #6E2DE8 → #45108A, glifo #F7F5FF. Mismo patrón vellichor: web accent = icon accent.
+ *
+ * App brand signature (light):
+ *   - Purple CTA      #6E2DE8  (CTAs, links — WCAG AA on white: 6.56:1 ✓)
+ *   - Purple hover    #45108A  (active state — el tono inferior del gradiente)
+ *   - Purple soft     #F3EDFE  (subtle backgrounds)
+ *   - Purple bright   #8B5CF6  (borders/badges, NOT body text)
+ */
+
+:root {
+  /* ─── Light theme (default — Apple canon) ─── */
+
+  /* Backgrounds (Apple canon) */
+  --umbrix-bg: #FFFFFF;
+  --umbrix-bg-section: #F5F5F7;
+  --umbrix-bg-card: #FBFBFD;
+  --umbrix-bg-elevated: #FFFFFF;
+
+  /* Text (Apple canon — exact apple.com values) */
+  --umbrix-text-primary: #1D1D1F;
+  --umbrix-text-secondary: #6E6E73;
+  --umbrix-text-tertiary: #86868B;
+  --umbrix-text-disabled: #C7C7CC;
+
+  /* Brand accent — deep purple del AppIcon.icon */
+  --umbrix-accent: #6E2DE8;
+  --umbrix-accent-hover: #45108A;
+  --umbrix-accent-soft: #F3EDFE;
+  --umbrix-accent-bright: #8B5CF6;
+
+  /* Map to Layer 3 primitives */
+  --color-bg: var(--umbrix-bg);
+  --color-bg-section: var(--umbrix-bg-section);
+  --color-bg-card: var(--umbrix-bg-card);
+  --color-bg-elevated: var(--umbrix-bg-elevated);
+  --color-text-primary: var(--umbrix-text-primary);
+  --color-text-secondary: var(--umbrix-text-secondary);
+  --color-text-tertiary: var(--umbrix-text-tertiary);
+  --color-accent: var(--umbrix-accent);
+  --color-accent-hover: var(--umbrix-accent-hover);
+  --color-accent-soft: var(--umbrix-accent-soft);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* ─── Dark theme (Apple canon) ─── */
+    --umbrix-bg: #000000;
+    --umbrix-bg-section: #161617;
+    --umbrix-bg-card: #1D1D1F;
+    --umbrix-bg-elevated: #2C2C2E;
+
+    --umbrix-text-primary: #F5F5F7;
+    --umbrix-text-secondary: #A1A1A6;
+    --umbrix-text-tertiary: #86868B;
+
+    /* Purple aclarado — variante dark del icon (WCAG sobre #000: 8.69:1 ✓) */
+    --umbrix-accent: #B794FF;
+    --umbrix-accent-hover: #CBB2FF;
+    --umbrix-accent-soft: #221639;
+    --umbrix-accent-bright: #8B5CF6;
+
+    --color-bg: var(--umbrix-bg);
+    --color-bg-section: var(--umbrix-bg-section);
+    --color-bg-card: var(--umbrix-bg-card);
+    --color-bg-elevated: var(--umbrix-bg-elevated);
+    --color-text-primary: var(--umbrix-text-primary);
+    --color-text-secondary: var(--umbrix-text-secondary);
+    --color-text-tertiary: var(--umbrix-text-tertiary);
+    --color-accent: var(--umbrix-accent);
+    --color-accent-hover: var(--umbrix-accent-hover);
+    --color-accent-soft: var(--umbrix-accent-soft);
+  }
+}

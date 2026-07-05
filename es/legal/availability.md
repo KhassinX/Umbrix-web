@@ -1,7 +1,7 @@
 ---
 layout: prose
 title: Disponibilidad
-description: "Dónde está disponible Hermod, por qué podría no estarlo, y un registro factual de cualquier territorio donde se haya retirado."
+description: "Dónde está disponible Umbrix, por qué podría no estarlo, y un registro factual de cualquier territorio donde se haya retirado."
 permalink: /es/legal/availability/
 lang: es
 canonical_en: /legal/availability/
@@ -10,13 +10,13 @@ updated: 2026-07-02
 ---
 <!-- DRAFT — aún no publicado. -->
 
-Hermod se ofrece donde la mensajería anónima y cifrada de extremo a extremo es legal. La disponibilidad puede cambiar según cambien las leyes. No debilitamos el cifrado para entrar a un mercado ni para permanecer en él.
+Umbrix se ofrece donde la mensajería anónima y cifrada de extremo a extremo es legal. La disponibilidad puede cambiar según cambien las leyes. No debilitamos el cifrado para entrar a un mercado ni para permanecer en él.
 
-Dos cosas pueden hacer que Hermod no esté disponible en un territorio: nuestra propia decisión de no ofrecerlo ahí por complejidad legal, o una solicitud verificada de una autoridad local competente (ver [Solicitudes Gubernamentales y Legales](/es/legal/requests/)). Esta página registra ambas, como simple hecho.
+Dos cosas pueden hacer que Umbrix no esté disponible en un territorio: nuestra propia decisión de no ofrecerlo ahí por complejidad legal, o una solicitud verificada de una autoridad local competente (ver [Solicitudes Gubernamentales y Legales](/es/legal/requests/)). Esta página registra ambas, como simple hecho.
 
 ## Registro
 
-La tabla de abajo lista cada territorio donde Hermod ha sido retirado, con la fecha, el motivo y la base legal citada. Está vacía hasta que ocurra una acción de este tipo.
+La tabla de abajo lista cada territorio donde Umbrix ha sido retirado, con la fecha, el motivo y la base legal citada. Está vacía hasta que ocurra una acción de este tipo.
 
 | País / Territorio | Fecha | Motivo | Base legal | Documento |
 |---|---|---|---|---|

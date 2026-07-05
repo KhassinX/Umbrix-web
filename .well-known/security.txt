@@ -1,5 +1,5 @@
 Contact: mailto:security@khassinx.com
 Expires: 2027-06-30T00:00:00.000Z
 Preferred-Languages: en, es
-Canonical: https://hermod.khassinx.com/.well-known/security.txt
+Canonical: https://umbrix.khassinx.com/.well-known/security.txt
 Policy: https://khassinx.com/security/
