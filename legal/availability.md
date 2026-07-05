@@ -1,7 +1,7 @@
 ---
 layout: prose
 title: Availability
-description: "Where Hermod is available, why it may not be, and a factual record of any territory where it has been withdrawn."
+description: "Where Umbrix is available, why it may not be, and a factual record of any territory where it has been withdrawn."
 permalink: /legal/availability/
 lang: en
 canonical_en: /legal/availability/
@@ -10,13 +10,13 @@ updated: 2026-07-02
 ---
 <!-- DRAFT — not yet published. -->
 
-Hermod is offered where end-to-end encrypted, anonymous messaging is lawful. Availability can change as laws change. We do not weaken the encryption to enter a market or to remain in one.
+Umbrix is offered where end-to-end encrypted, anonymous messaging is lawful. Availability can change as laws change. We do not weaken the encryption to enter a market or to remain in one.
 
-Two things can make Hermod unavailable in a territory: our own decision not to offer it there due to legal complexity, or a verified request from a competent local authority (see [Government & Legal Requests](/legal/requests/)). This page records both, as plain fact.
+Two things can make Umbrix unavailable in a territory: our own decision not to offer it there due to legal complexity, or a verified request from a competent local authority (see [Government & Legal Requests](/legal/requests/)). This page records both, as plain fact.
 
 ## Record
 
-The table below lists every territory where Hermod has been withdrawn, with the date, the reason, and the legal basis cited. It is empty until such an action occurs.
+The table below lists every territory where Umbrix has been withdrawn, with the date, the reason, and the legal basis cited. It is empty until such an action occurs.
 
 | Country / Territory | Date | Reason | Legal basis | Document |
 |---|---|---|---|---|

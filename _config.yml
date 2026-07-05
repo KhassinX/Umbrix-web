@@ -1,10 +1,10 @@
-# hermod.khassinx.com — Jekyll config (canon: _template/web/templates/base.html + WEB_PROPERTY_SPEC)
+# umbrix.khassinx.com — Jekyll config (canon: _template/web/templates/base.html + WEB_PROPERTY_SPEC)
 # Marca INDEPENDIENTE (Decisión #8): sin nota de ecosistema en el footer (show_ecosystem_note ausente);
 # la única señal del dueño es la entidad legal © KHASSINX LLC.
-title: Hermod
-short_name: Hermod
+title: Umbrix
+short_name: Umbrix
 description: End-to-end encrypted, Apple-native messaging with zero data collection. No servers, no accounts, no trackers.
-url: https://hermod.khassinx.com
+url: https://umbrix.khassinx.com
 lang: en
 locales: [en, es]
 schema_type: app
@@ -13,7 +13,7 @@ theme_color_dark: "#0E0E11"
 theme_color_light: "#FAFAF7"
 
 # Layer 2 brand tokens (púrpura provisional — alinear al .icon en el track C1)
-app_tokens_css: /assets/css/hermod-tokens.css
+app_tokens_css: /assets/css/umbrix-tokens.css
 
 # og_image / favicons / org_logo: se generan desde el AppIcon.icon (track C1). Claves ausentes a propósito.
 

@@ -1,7 +1,7 @@
 ---
 layout: prose
 title: Warrant Canary
-description: "Declaración permanente sobre solicitudes gubernamentales de datos recibidas por el editor de Hermod."
+description: "Declaración permanente sobre solicitudes gubernamentales de datos recibidas por el editor de Umbrix."
 permalink: /es/legal/canary/
 lang: es
 canonical_en: /legal/canary/
@@ -10,7 +10,7 @@ updated: 2026-07-01
 ---
 <!-- DRAFT — aún no publicado. -->
 
-A fecha de **[FECHA DE ACTIVACIÓN — fijar en la primera publicación]**, KHASSINX LLC, editor de Hermod:
+A fecha de **[FECHA DE ACTIVACIÓN — fijar en la primera publicación]**, KHASSINX LLC, editor de Umbrix:
 
 - ha recibido **cero** national security letters;
 - ha recibido **cero** órdenes del tribunal FISA;
@@ -24,6 +24,6 @@ Esta declaración se vuelve a publicar **trimestralmente**. Si una actualizació
 
 ## Por qué importa menos de lo habitual (para bien)
 
-Un canary normalmente custodia una base de datos. El editor de Hermod no opera servidores de mensajes, no guarda archivo de metadatos y no mantiene registro de usuarios — así que incluso una solicitud forzosa casi no tiene qué alcanzar. El canary cubre las exigencias que intentarían cambiar eso (puertas traseras, mandatos de logging).
+Un canary normalmente custodia una base de datos. El editor de Umbrix no opera servidores de mensajes, no guarda archivo de metadatos y no mantiene registro de usuarios — así que incluso una solicitud forzosa casi no tiene qué alcanzar. El canary cubre las exigencias que intentarían cambiar eso (puertas traseras, mandatos de logging).
 
 Verifica el historial de esta página en archivos web públicos.

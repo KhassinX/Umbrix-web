@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hermod.khassinx.com/sitemap.xml
+Sitemap: https://umbrix.khassinx.com/sitemap.xml
