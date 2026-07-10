@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["DTY56Y4N5M.com.khassinx.umbrix"],
+        "components": [
+          {
+            "/": "/add/*",
+            "comment": "Umbrix invite links: tapping umbrix.khassinx.com/add/<code> opens the app to add a contact"
+          }
+        ]
+      }
+    ]
+  }
+}
