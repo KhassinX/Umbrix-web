@@ -123,7 +123,10 @@
   {%- if page.extra_css %}<link rel="stylesheet" href="{{ page.extra_css }}">{% endif %}
 </head>
 <body>
-  <a class="skip-link" href="#main">{{ site.skip_to_content | default: 'Skip to content' }}</a>
+  {%- comment -%} ui_strings + footer_nav están keyed por locale en _config.yml — resolver acá una vez. {%- endcomment -%}
+  {%- assign lang_key = page.lang | default: site.lang | default: 'en' -%}
+  {%- assign ui = site.ui_strings[lang_key] | default: site.ui_strings.en -%}
+  <a class="skip-link" href="#main">{{ ui.skip_to_main | default: 'Skip to content' }}</a>
   <main id="main">
     {{ content }}
   </main>
@@ -136,14 +139,15 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-copyright">© {{ 'now' | date: '%Y' }} {{ site.org_legal_name | default: 'KHASSINX LLC' }}</div>
-      {%- if site.footer_nav %}
-      <nav aria-label="{{ site.footer_nav_label | default: 'Footer' }}">
-        {%- for item in site.footer_nav %}
+      {%- assign fnav = site.footer_nav[lang_key] | default: site.footer_nav.en -%}
+      {%- if fnav %}
+      <nav aria-label="{{ ui.footer_label | default: 'Footer' }}">
+        {%- for item in fnav %}
         <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
         {%- endfor %}
       </nav>
       {%- endif %}
-      <div class="locale-switcher" aria-label="{{ site.language_selector_label | default: 'Language selector' }}">
+      <div class="locale-switcher" aria-label="{{ ui.language_selector_label | default: 'Language selector' }}">
         {%- if page.lang == 'es' -%}
         <a href="{{ page.canonical_en | default: '/' | relative_url }}" hreflang="en" lang="en">EN</a>
         <span aria-hidden="true">·</span>

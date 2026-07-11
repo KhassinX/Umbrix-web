@@ -15,18 +15,12 @@ theme_color_light: "#FAFAF7"
 # Layer 2 brand tokens (púrpura provisional — alinear al .icon en el track C1)
 app_tokens_css: /assets/css/umbrix-tokens.css
 
-# og_image / favicons / org_logo: se generan desde el AppIcon.icon (track C1). Claves ausentes a propósito.
+# og_image: pendiente (share card 1200×630 desde el AppIcon.icon — track C1). Clave ausente a propósito.
+org_logo: /assets/favicons/icon-512.png
 
-nav:
-  en:
-    - title: Legal
-      url: /legal/
-  es:
-    - title: Legal
-      url: /es/legal/
-
-# Footer — orden canónico del Legal Trust Hub (WEB_PROPERTY_SPEC §10.3):
-# Privacy · Terms · Legal · Security · Contact.
+# Footer — Legal Trust Hub (WEB_PROPERTY_SPEC §10.3) + Support/Contact como páginas:
+# Privacy · Terms · Legal · Security · Support · Contact.
+# (El layout no tiene header nav; el footer es la navegación del sitio.)
 footer_nav:
   en:
     - title: Privacy
@@ -37,8 +31,10 @@ footer_nav:
       url: /legal/
     - title: Security
       url: /security/
+    - title: Support
+      url: /support/
     - title: Contact
-      url: mailto:hello@khassinx.com
+      url: /contact/
   es:
     - title: Privacidad
       url: /es/legal/privacy/
@@ -48,16 +44,22 @@ footer_nav:
       url: /es/legal/
     - title: Seguridad
       url: /es/security/
+    - title: Soporte
+      url: /es/support/
     - title: Contacto
-      url: mailto:hello@khassinx.com
+      url: /es/contact/
 
 ui_strings:
   en:
     skip_to_main: "Skip to main content"
     last_updated_label: "Last updated"
+    footer_label: "Footer"
+    language_selector_label: "Language selector"
   es:
     skip_to_main: "Saltar al contenido principal"
     last_updated_label: "Última actualización"
+    footer_label: "Pie de página"
+    language_selector_label: "Selector de idioma"
 
 markdown: kramdown
 plugins:
