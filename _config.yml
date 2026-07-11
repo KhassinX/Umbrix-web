@@ -12,8 +12,10 @@ org_legal_name: "KHASSINX LLC"
 theme_color_dark: "#0E0E11"
 theme_color_light: "#FAFAF7"
 
-# Layer 2 brand tokens (púrpura provisional — alinear al .icon en el track C1)
+# Layer 2 brand tokens (púrpura alineado al AppIcon.icon)
 app_tokens_css: /assets/css/umbrix-tokens.css
+# Bump para invalidar el cache del edge CF al cambiar CSS (los tokens no tienen scope de purge)
+css_version: 20260711
 
 # og_image: pendiente (share card 1200×630 desde el AppIcon.icon — track C1). Clave ausente a propósito.
 org_logo: /assets/favicons/icon-512.png

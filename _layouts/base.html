@@ -117,9 +117,10 @@
   {%- comment -%}
     ── CSS layers (orden BRAND_SYSTEM §1): Layer 1 (umbrella, solo apex) → Layer 2 (per-app rebind) → Layer 3 (primitives) ──
   {%- endcomment -%}
-  {%- if site.umbrella_tokens %}<link rel="stylesheet" href="/assets/css/tokens.css">{% endif %}
-  {%- if site.app_tokens_css %}<link rel="stylesheet" href="{{ site.app_tokens_css }}">{% endif %}
-  <link rel="stylesheet" href="/assets/css/primitives.css">
+  {%- comment -%} ?v= cache-buster: los tokens CF actuales no tienen scope de purge; versionar la URL invalida el edge al instante. Bump al cambiar CSS. {%- endcomment -%}
+  {%- if site.umbrella_tokens %}<link rel="stylesheet" href="/assets/css/tokens.css?v={{ site.css_version | default: 1 }}">{% endif %}
+  {%- if site.app_tokens_css %}<link rel="stylesheet" href="{{ site.app_tokens_css }}?v={{ site.css_version | default: 1 }}">{% endif %}
+  <link rel="stylesheet" href="/assets/css/primitives.css?v={{ site.css_version | default: 1 }}">
   {%- if page.extra_css %}<link rel="stylesheet" href="{{ page.extra_css }}">{% endif %}
 </head>
 <body>
