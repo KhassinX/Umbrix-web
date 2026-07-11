@@ -1,0 +1,16 @@
+{
+  "name": "Umbrix Messenger",
+  "short_name": "Umbrix",
+  "description": "End-to-end encrypted, Apple-native messaging with zero data collection.",
+  "id": "/",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#45108A",
+  "background_color": "#FAFAF7",
+  "icons": [
+    { "src": "/assets/favicons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/favicons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/favicons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "/assets/favicons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
