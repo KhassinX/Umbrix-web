@@ -20,6 +20,6 @@ Umbrix está construido para que la privacidad sea verificable, no prometida. Es
 
 Las preguntas sobre la app van a [Soporte](/es/support/); todos los demás canales están en [Contacto](/es/contact/).
 
-Para los derechos de privacidad que tienes bajo el RGPD (UE/EEE), el Reino Unido, la LOPDGDD de España, la CCPA de California, otros estados de EE. UU. y el resto del mundo, consulta el [centro de Derechos de Privacidad](https://khassinx.com/legal/your-rights/) del editor.
+Para los derechos de privacidad que tienes bajo el RGPD (UE/EEE), el Reino Unido, la LOPDGDD de España, la CCPA de California, otros estados de EE. UU. y el resto del mundo, consulta el [centro de Derechos de Privacidad](https://khassinx.com/es/legal/your-rights/) del editor.
 
 Umbrix es publicado por **KHASSINX LLC**, una sociedad de responsabilidad limitada de Florida (Estados Unidos). Contacto: [`legal@khassinx.com`](mailto:legal@khassinx.com).

@@ -57,7 +57,7 @@ Como Umbrix no procesa datos personales de nuestro lado, la mayoría de los dere
 
 - **Revisar, corregir o borrar** cualquier correspondencia de soporte que nos hayas enviado — escribe a [`legal@khassinx.com`](mailto:legal@khassinx.com).
 - **Nunca vendemos ni compartimos información personal** — por política y por arquitectura. No alcanzamos los umbrales de aplicabilidad de leyes como la California Consumer Privacy Act, y honramos su espíritu de todos modos porque no hay nada que vender.
-- Para un panorama de los derechos que tienes bajo el RGPD (UE/EEE), el Reino Unido, la LOPDGDD de España, la CCPA de California, otros estados de EE. UU. y el resto del mundo — y cómo ejercerlos — consulta el [centro de Derechos de Privacidad](https://khassinx.com/legal/your-rights/) del editor, o escribe a [`legal@khassinx.com`](mailto:legal@khassinx.com).
+- Para un panorama de los derechos que tienes bajo el RGPD (UE/EEE), el Reino Unido, la LOPDGDD de España, la CCPA de California, otros estados de EE. UU. y el resto del mundo — y cómo ejercerlos — consulta el [centro de Derechos de Privacidad](https://khassinx.com/es/legal/your-rights/) del editor, o escribe a [`legal@khassinx.com`](mailto:legal@khassinx.com).
 
 ## Menores
 
