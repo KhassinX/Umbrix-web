@@ -6,13 +6,13 @@ permalink: /legal/availability/
 lang: en
 canonical_en: /legal/availability/
 canonical_es: /es/legal/availability/
-updated: 2026-07-02
+updated: 2026-07-11
 ---
-<!-- DRAFT — not yet published. -->
-
-Umbrix is offered where end-to-end encrypted, anonymous messaging is lawful. Availability can change as laws change. We do not weaken the encryption to enter a market or to remain in one.
+Umbrix is distributed exclusively through the Apple App Store, and offered where we understand its private, end-to-end encrypted design to be lawful. Availability can change as laws change. We do not weaken the encryption to enter a market or to remain in one.
 
 Two things can make Umbrix unavailable in a territory: our own decision not to offer it there due to legal complexity, or a verified request from a competent local authority (see [Government & Legal Requests](/legal/requests/)). This page records both, as plain fact.
+
+**Unofficial installs.** Where Umbrix is not offered, it is not offered on purpose. Obtaining or using the app in such a territory by sideloading, circumventing App Store security or regional restrictions, or through any unofficial channel is unauthorized, unsupported, and entirely at the user's own risk — see the [Terms of Service](/legal/terms/). Such use does not make Umbrix "available" there, and we are not responsible for it.
 
 ## Record
 

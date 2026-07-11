@@ -6,11 +6,9 @@ permalink: /es/legal/canary/
 lang: es
 canonical_en: /legal/canary/
 canonical_es: /es/legal/canary/
-updated: 2026-07-01
+updated: 2026-07-11
 ---
-<!-- DRAFT — aún no publicado. -->
-
-A fecha de **[FECHA DE ACTIVACIÓN — fijar en la primera publicación]**, KHASSINX LLC, editor de Umbrix:
+A fecha de **2026-07-11**, KHASSINX LLC, editor de Umbrix:
 
 - ha recibido **cero** national security letters;
 - ha recibido **cero** órdenes del tribunal FISA;

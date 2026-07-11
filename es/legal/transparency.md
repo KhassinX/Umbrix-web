@@ -8,8 +8,6 @@ canonical_en: /legal/transparency/
 canonical_es: /es/legal/transparency/
 updated: 2026-07-01
 ---
-<!-- DRAFT — aún no publicado. -->
-
 La mayoría de las políticas de privacidad piden confianza. Este informe está escrito para que necesites la menor posible: describe la arquitectura, qué puede ver técnicamente cada parte y — igual de importante — qué **no** pueden hacer nuestras protecciones.
 
 ## La arquitectura en un párrafo

@@ -7,8 +7,6 @@ lang: es
 canonical_en: /legal/
 canonical_es: /es/legal/
 ---
-<!-- DRAFT — aún no publicado. -->
-
 Umbrix está construido para que la privacidad sea verificable, no prometida. Estos documentos dicen exactamente qué hacemos, qué no podemos hacer y qué aceptas al usarlo.
 
 - **[Política de Privacidad](/es/legal/privacy/)** — qué recolectamos (nada), cómo viajan los mensajes y tus derechos.
@@ -17,8 +15,10 @@ Umbrix está construido para que la privacidad sea verificable, no prometida. Es
 - **[Solicitudes Gubernamentales y Legales](/es/legal/requests/)** — cómo manejamos las solicitudes de datos (no tenemos nada) y las solicitudes para retirar Umbrix de un país.
 - **[Disponibilidad](/es/legal/availability/)** — dónde está disponible Umbrix y un registro factual de cualquier retiro.
 - **[Warrant Canary](/es/legal/canary/)** — declaración permanente sobre solicitudes gubernamentales de datos.
-- **[Proveedores de Infraestructura](/es/legal/subprocessors/)** — las únicas dos empresas cuya infraestructura toca tráfico (cifrado) de Umbrix.
+- **[Proveedores de Infraestructura](/es/legal/subprocessors/)** — las únicas empresas cuya infraestructura toca tráfico (cifrado) de Umbrix o sirve este sitio web.
 - **[Seguridad y Divulgación Responsable](/es/security/)** — cómo reportar vulnerabilidades.
+
+Las preguntas sobre la app van a [Soporte](/es/support/); todos los demás canales están en [Contacto](/es/contact/).
 
 Para los derechos de privacidad que tienes bajo el RGPD (UE/EEE), el Reino Unido, la LOPDGDD de España, la CCPA de California, otros estados de EE. UU. y el resto del mundo, consulta el [centro de Derechos de Privacidad](https://khassinx.com/legal/your-rights/) del editor.
 
