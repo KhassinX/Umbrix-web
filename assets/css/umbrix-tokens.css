@@ -18,6 +18,11 @@
  *   - Purple hover    #45108A  (active state — el tono inferior del gradiente)
  *   - Purple soft     #F3EDFE  (subtle backgrounds)
  *   - Purple bright   #8B5CF6  (borders/badges, NOT body text)
+ *
+ * 2026-07-11 — fix: este archivo definía la paleta pero NO el re-bind --khassinx-*
+ * ni los tokens estructurales (spacing/typography/radius/shadows) que primitives.css
+ * consume → el sitio renderizaba sin diseño. Completado con el patrón canónico
+ * (NEW_APP_WEB_PROPERTY_GUIDE §1.4), conservando la paleta aprobada.
  */
 
 :root {
@@ -37,50 +42,158 @@
 
   /* Brand accent — deep purple del AppIcon.icon */
   --umbrix-accent: #6E2DE8;
-  --umbrix-accent-hover: #45108A;
+  --umbrix-accent-strong: #45108A;
   --umbrix-accent-soft: #F3EDFE;
   --umbrix-accent-bright: #8B5CF6;
 
-  /* Map to Layer 3 primitives */
-  --color-bg: var(--umbrix-bg);
-  --color-bg-section: var(--umbrix-bg-section);
-  --color-bg-card: var(--umbrix-bg-card);
-  --color-bg-elevated: var(--umbrix-bg-elevated);
-  --color-text-primary: var(--umbrix-text-primary);
-  --color-text-secondary: var(--umbrix-text-secondary);
-  --color-text-tertiary: var(--umbrix-text-tertiary);
-  --color-accent: var(--umbrix-accent);
-  --color-accent-hover: var(--umbrix-accent-hover);
-  --color-accent-soft: var(--umbrix-accent-soft);
+  /* Borders (Apple hairline) */
+  --umbrix-border: #D2D2D7;
+  --umbrix-border-strong: #86868B;
+
+  /* Status (Apple system colors) */
+  --umbrix-success: #34C759;
+  --umbrix-warning: #FF9500;
+  --umbrix-danger: #FF3B30;
+
+  /* ─── Re-bind a Layer 1 token names so primitives.css works ─── */
+  --khassinx-bg: var(--umbrix-bg);
+  --khassinx-bg-section: var(--umbrix-bg-section);
+  --khassinx-bg-card: var(--umbrix-bg-card);
+  --khassinx-bg-elevated: var(--umbrix-bg-elevated);
+  --khassinx-text-primary: var(--umbrix-text-primary);
+  --khassinx-text-secondary: var(--umbrix-text-secondary);
+  --khassinx-text-tertiary: var(--umbrix-text-tertiary);
+  --khassinx-text-disabled: var(--umbrix-text-disabled);
+  --khassinx-accent: var(--umbrix-accent);
+  --khassinx-accent-strong: var(--umbrix-accent-strong);
+  --khassinx-accent-soft: var(--umbrix-accent-soft);
+  --khassinx-border: var(--umbrix-border);
+  --khassinx-border-strong: var(--umbrix-border-strong);
+  --khassinx-success: var(--umbrix-success);
+  --khassinx-warning: var(--umbrix-warning);
+  --khassinx-danger: var(--umbrix-danger);
+
+  /* Spacing scale (Layer 3 — Apple-grade) */
+  --space-xs: 4px;
+  --space-s: 8px;
+  --space-m: 12px;
+  --space-md: 16px;
+  --space-lg: 20px;
+  --space-xl: 24px;
+  --space-2xl: 32px;
+  --space-3xl: 48px;
+  --space-4xl: 64px;
+  --space-5xl: 96px;
+  --space-6xl: 128px;
+  --space-7xl: 160px;
+  --space-8xl: 200px;
+
+  /* Container max-widths (Apple-canonical 980px) */
+  --container-narrow: 640px;
+  --container-default: 980px;
+  --container-wide: 1280px;
+
+  /* Border radius (Apple soft corners) */
+  --radius-s: 6px;
+  --radius-m: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 22px;
+  --radius-2xl: 28px;
+  --radius-pill: 999px;
+
+  /* Typography (Layer 3 Apple canon) */
+  --font-stack: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "SF Mono", Menlo, Consolas, monospace;
+
+  --fs-display-xl: 80px;
+  --fs-display-l: 56px;
+  --fs-display-m: 40px;
+  --fs-display-s: 32px;
+  --fs-h1: 48px;
+  --fs-h2: 32px;
+  --fs-h3: 24px;
+  --fs-h4: 19px;
+  --fs-body-l: 19px;
+  --fs-body: 17px;
+  --fs-body-s: 15px;
+  --fs-small: 15px;
+  --fs-caption: 13px;
+  --fs-micro: 11px;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --lh-display: 1.05;
+  --lh-heading: 1.1;
+  --lh-body: 1.47;
+  --lh-tight: 1.2;
+
+  --ls-display: -0.025em;
+  --ls-heading: -0.02em;
+  --ls-body: -0.005em;
+  --ls-caps: 0.05em;
+
+  /* Shadows (Apple-canonical subtle) */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.08);
+
+  /* Transitions (Apple-canonical 200-300ms ease) */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
 }
+
+/* ─── Dark theme (auto via prefers-color-scheme) ─── */
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* ─── Dark theme (Apple canon) ─── */
+    /* Backgrounds (Apple OLED-optimized — paleta dark aprobada de Umbrix) */
     --umbrix-bg: #000000;
     --umbrix-bg-section: #161617;
     --umbrix-bg-card: #1D1D1F;
     --umbrix-bg-elevated: #2C2C2E;
 
+    /* Text (Apple canon dark) */
     --umbrix-text-primary: #F5F5F7;
     --umbrix-text-secondary: #A1A1A6;
     --umbrix-text-tertiary: #86868B;
+    --umbrix-text-disabled: #48484A;
 
     /* Purple aclarado — variante dark del icon (WCAG sobre #000: 8.69:1 ✓) */
     --umbrix-accent: #B794FF;
-    --umbrix-accent-hover: #CBB2FF;
+    --umbrix-accent-strong: #CBB2FF;
     --umbrix-accent-soft: #221639;
     --umbrix-accent-bright: #8B5CF6;
 
-    --color-bg: var(--umbrix-bg);
-    --color-bg-section: var(--umbrix-bg-section);
-    --color-bg-card: var(--umbrix-bg-card);
-    --color-bg-elevated: var(--umbrix-bg-elevated);
-    --color-text-primary: var(--umbrix-text-primary);
-    --color-text-secondary: var(--umbrix-text-secondary);
-    --color-text-tertiary: var(--umbrix-text-tertiary);
-    --color-accent: var(--umbrix-accent);
-    --color-accent-hover: var(--umbrix-accent-hover);
-    --color-accent-soft: var(--umbrix-accent-soft);
+    /* Borders (Apple dark hairline) */
+    --umbrix-border: #38383A;
+    --umbrix-border-strong: #48484A;
+
+    /* Status (Apple system colors dark) */
+    --umbrix-success: #30D158;
+    --umbrix-warning: #FF9F0A;
+    --umbrix-danger: #FF453A;
+
+    /* Re-bind a Layer 1 names */
+    --khassinx-bg: var(--umbrix-bg);
+    --khassinx-bg-section: var(--umbrix-bg-section);
+    --khassinx-bg-card: var(--umbrix-bg-card);
+    --khassinx-bg-elevated: var(--umbrix-bg-elevated);
+    --khassinx-text-primary: var(--umbrix-text-primary);
+    --khassinx-text-secondary: var(--umbrix-text-secondary);
+    --khassinx-text-tertiary: var(--umbrix-text-tertiary);
+    --khassinx-text-disabled: var(--umbrix-text-disabled);
+    --khassinx-accent: var(--umbrix-accent);
+    --khassinx-accent-strong: var(--umbrix-accent-strong);
+    --khassinx-accent-soft: var(--umbrix-accent-soft);
+    --khassinx-border: var(--umbrix-border);
+    --khassinx-border-strong: var(--umbrix-border-strong);
+    --khassinx-success: var(--umbrix-success);
+    --khassinx-warning: var(--umbrix-warning);
+    --khassinx-danger: var(--umbrix-danger);
   }
 }
