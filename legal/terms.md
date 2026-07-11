@@ -1,65 +1,102 @@
 ---
 layout: prose
 title: Terms of Service
-description: "Terms governing your use of Umbrix."
+description: "The terms that govern your use of the Umbrix app and this website."
 permalink: /legal/terms/
 lang: en
 canonical_en: /legal/terms/
 canonical_es: /es/legal/terms/
-updated: 2026-07-01
+updated: 2026-07-11
 ---
-<!-- DRAFT — not yet published. -->
 
-## Acceptance
+These Terms of Service ("Terms") are an agreement between you and **KHASSINX LLC**, a Florida limited liability company (United States) ("we", "us"), the publisher of **Umbrix** — an end-to-end encrypted 1:1 messaging app for Apple devices — and the operator of this website. They cover your use of the app and of umbrix.khassinx.com.
 
-By using Umbrix, you agree to these terms. If you don't agree, don't use the app.
+## 1. Acceptance
 
-## The app
+By installing or using Umbrix, or using this website, you agree to these Terms. If you do not agree, do not use the app or the site.
 
-Umbrix is published by **KHASSINX LLC**, a Florida limited liability company. Umbrix is an end-to-end encrypted 1:1 messaging app for Apple devices that collects no personal data and operates no servers of its own.
+## 2. Age and eligibility
 
-## License
+Umbrix is not directed to children. You must meet the minimum age shown for Umbrix on the App Store in your region, and in no case may you use it if you are under 13. If you are a minor where you live, you may use Umbrix only with the permission of a parent or legal guardian who agrees to these Terms on your behalf. You must also be legally able to enter into this agreement.
 
-We grant you a personal, non-transferable license to use Umbrix on Apple devices you own or control, subject to Apple's Media Services Terms and the Licensed Application End User License Agreement.
+## 3. License
 
-## Age requirement
+The app is licensed to you — not sold — under [Apple's Licensed Application End User License Agreement](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) (the "Standard EULA"), which governs the software license itself, including its warranty disclaimers and Apple's role. These Terms apply in addition to the Standard EULA and govern the service, your conduct, and this website; if the two conflict about the software license, the Standard EULA controls. Apple is not a party to these Terms and is not responsible for Umbrix or for providing support for it.
 
-Umbrix is rated **17+**. You must be at least 17 years old (or the higher minimum age required in your jurisdiction) to use it.
+## 4. What Umbrix is — and what it deliberately is not
 
-## Availability
+Umbrix is private 1:1 messaging. Messages are end-to-end encrypted on your device; we operate no servers of our own, and encrypted messages travel through an ephemeral relay that deletes them on delivery. Umbrix has no accounts: your identity is a cryptographic key pair generated on your device, and you choose exactly who you talk to — there is no directory of users and no matching with strangers.
 
-Umbrix is offered only in regions where end-to-end encrypted, anonymous messaging is lawful. Availability may change if the law changes. We won't weaken the encryption to enter a market. Where a competent authority requires it, we make Umbrix unavailable in that territory — see [Government & Legal Requests](/legal/requests/) and the [availability record](/legal/availability/).
+Because of that design, you must understand and accept the following:
 
-## Political neutrality
+- **There is no recovery.** Your keys and message history exist only on your devices. If you lose your device or delete the app without your own backup, neither we nor anyone else can restore anything.
+- **We cannot read your conversations** — not to help you, not to moderate them, not in response to a request. See the [Transparency Report](/legal/transparency/).
+- **Umbrix is not an emergency service.** Do not rely on it to contact emergency services or for communications where a failure or delay could cause harm. Message delivery is not guaranteed.
 
-Umbrix is neutral software. It does not promote or oppose any cause, government, or political position. KHASSINX LLC complies with applicable local law, including making Umbrix unavailable in a territory where a competent authority requires it. Withdrawing from a market is a compliance action, not a statement.
+## 5. Availability and territories
 
-## Acceptable use
+Umbrix is distributed **exclusively through the Apple App Store**, and only in the territories where we choose to offer it. We follow a conservative availability policy: we offer Umbrix where we understand its private, end-to-end encrypted design to be lawful, and we do not weaken the encryption to enter or remain in any market. Availability can change — including when a competent authority validly requires withdrawal, as described in [Government & Legal Requests](/legal/requests/) and recorded in the [availability record](/legal/availability/).
 
-Umbrix's privacy exists to protect ordinary people. Don't use it to break the law — including harassment, exploitation, fraud, or distribution of illegal material. Don't attempt to disrupt the service, circumvent its anti-abuse protections (such as device attestation), reverse-engineer the app beyond what the law permits, or resell it.
+**Use outside offered territories is at your own risk.** If you obtain, install, or use Umbrix through any channel other than the official App Store listing for your territory — including sideloading, jailbroken devices, circumventing App Store security or regional restrictions, or using the app in a territory where we do not offer it — that use is unauthorized and unsupported. We are not responsible for such use, we provide no warranty or support for it, and complying with the laws that apply to you is solely your responsibility. We may block or limit such use where we technically can.
 
-Because Umbrix is end-to-end encrypted and has no accounts, we cannot read conversations or ban "users" by identity; enforcement operates through device-level anti-abuse (App Attest), blocking tools in the recipient's hands, and removal of the app from distribution channels where required by law.
+## 6. Acceptable use
 
-## Purchases
+Umbrix's privacy exists to protect ordinary people. You must not use Umbrix or this website to:
 
-The core app is free. If optional one-time cosmetic upgrades or donations are offered, pricing is shown in-app before you buy, and purchases and refunds are handled by Apple. No subscription is required for messaging.
+- break the law — including any exchange of **child sexual abuse material (CSAM)** or any other sexual exploitation of minors, the enticement or grooming of minors, human trafficking, extortion, fraud, or the unlawful sale of goods whose trade is prohibited;
+- harass, stalk, threaten, or defraud any person;
+- infringe the intellectual property or privacy rights of others;
+- distribute malware or send unsolicited bulk messages (spam);
+- interfere with the service or with other users' use of it, or probe, disrupt, or overload the infrastructure it relies on;
+- circumvent, disable, or defeat its anti-abuse protections (such as device attestation) or its regional availability restrictions;
+- reverse engineer, decompile, or modify the app except to the extent the law expressly permits it despite this restriction; or
+- sell, rent, or redistribute the app or access to it.
 
-## Trademarks
+## 7. Enforcement in an end-to-end encrypted service — honestly stated
 
-"Umbrix" is a trademark of KHASSINX LLC. Apple, App Store, iPhone, iPad, Mac, Apple Watch, and related marks are trademarks of Apple Inc., used descriptively.
+We designed Umbrix so that we technically cannot read anyone's conversations, and we do not monitor content; United States law does not require us to monitor or to weaken encryption (18 U.S.C. §2258A(f)). That means enforcement of Section 6 works differently than on a social network:
 
-## No warranty / limitation of liability
+- **Your tools come first.** You can block any contact instantly on your device, and you can report a contact or content from within the app. Reports work with what you voluntarily provide.
+- **We act on what we can act on.** We may use device-level, content-blind anti-abuse mechanisms (such as Apple's App Attest), restrict the app's availability, or terminate your permission to use the service under Section 13.
+- **We comply with the law.** If we obtain actual knowledge of apparent CSAM or related offenses, we report to the National Center for Missing & Exploited Children (NCMEC) as U.S. federal law requires, and we preserve what the law requires us to preserve. We respond to valid legal process concerning information we actually possess — which, by architecture, is designed to be nothing. See [Government & Legal Requests](/legal/requests/).
+- **Report CSAM at the source.** If you encounter CSAM, report it directly to NCMEC at [report.cybertip.org](https://report.cybertip.org) (or 1-800-843-5678) and to law enforcement, in addition to any in-app report.
 
-The app is provided "as is", without warranties of any kind, including fitness for a particular purpose. Security features described as best-effort (see the [Transparency Report](/legal/transparency/)) are exactly that. To the extent permitted by applicable law, KHASSINX LLC is not liable for indirect, incidental, or consequential damages arising from your use of the app.
+## 8. Your content and your responsibility
 
-## Termination
+You keep any rights you have in what you send. What people send through Umbrix is theirs alone — we do not and cannot create, select, or endorse it, and the person who sends a message is solely responsible for it. You are responsible for what you do with the app, for your device's security, and for whom you choose to communicate with.
 
-You can stop using Umbrix at any time; deleting the app deletes your keys and local data. We may stop distributing the app or discontinue features, and will communicate material discontinuations on this site.
+If you send us feedback or suggestions, you grant us a perpetual, royalty-free license to use them without obligation to you.
 
-## Governing law
+## 9. Purchases
 
-These terms are governed by the laws of the State of Florida, United States, without regard to conflict-of-law rules.
+Umbrix's core messaging is free. If we ever offer optional paid items (such as one-time cosmetic upgrades or donations), prices are shown in the app before you buy, the transaction is processed by Apple under Apple's terms, and **refunds are handled exclusively by Apple** ([reportaproblem.apple.com](https://reportaproblem.apple.com)). Nothing about messaging privacy ever sits behind a payment.
 
-## Contact
+## 10. Intellectual property
 
-[`legal@khassinx.com`](mailto:legal@khassinx.com).
+The app, this website, and the "Umbrix" name and bubble mark belong to KHASSINX LLC. These Terms give you no right to use our brand. Apple, App Store, iPhone, iPad, Mac, Apple Watch and related marks are trademarks of Apple Inc., used here to describe compatibility. If you believe content on this website infringes your copyright, email [`legal@khassinx.com`](mailto:legal@khassinx.com) with enough detail to evaluate the claim; note that Umbrix hosts no public user content.
+
+## 11. Disclaimers
+
+**The app and this website are provided "as is" and "as available", without warranties of any kind**, express or implied, including merchantability, fitness for a particular purpose, and non-infringement. Without limiting the honesty of what we do promise: security features described as best-effort in the [Transparency Report](/legal/transparency/) — such as screenshot detection — are exactly that; end-to-end encryption cannot protect a compromised or unlocked device; and we do not guarantee that the service will be available, uninterrupted, or error-free, or that any message will be delivered. Some jurisdictions do not allow certain warranty exclusions, so parts of this section may not apply to you.
+
+## 12. Limitation of liability and indemnity
+
+To the maximum extent permitted by law, KHASSINX LLC and its members and agents are not liable for indirect, incidental, special, consequential, exemplary, or punitive damages, or for lost profits, data, or goodwill, arising from or related to Umbrix or this website — and our total aggregate liability for all claims is limited to the greater of **ten U.S. dollars (US $10)** or the amount you paid us through the app in the twelve months before the claim. Some jurisdictions do not allow certain limitations, so parts of this section may not apply to you; in that case our liability is limited to the smallest extent the law allows.
+
+You agree to indemnify and hold KHASSINX LLC harmless from claims, damages, and reasonable attorneys' fees arising from your violation of these Terms or your misuse of the app, to the extent permitted by the law that applies to you.
+
+## 13. Termination
+
+You can stop using Umbrix at any time — deleting the app deletes your keys and your local data. We may suspend or terminate your permission to use the service, or discontinue the app or any feature, where we reasonably believe these Terms were violated or where we decide to stop offering the service; material discontinuations will be communicated on this site. Sections 8 and 10–15 survive termination.
+
+## 14. Governing law and disputes
+
+These Terms are governed by the laws of the **State of Florida, United States**, without regard to its conflict-of-law rules; if you are a consumer in a jurisdiction whose law grants you mandatory protections, those protections remain yours. Before filing any claim, you agree to email [`legal@khassinx.com`](mailto:legal@khassinx.com) and give us sixty days to try to resolve the dispute informally. Except where the law gives you the right to sue elsewhere (including small-claims court), disputes will be resolved in the state or federal courts located in Florida, and each of us consents to their jurisdiction. **To the extent permitted by law, claims may only be brought individually, not as part of a class or representative action.**
+
+## 15. Changes, language, and general terms
+
+We may update these Terms; the "Last updated" date above changes when we do, and material changes will be announced on this site before they take effect. Continuing to use Umbrix after a change takes effect means you accept it. These Terms are published in English and Español; **if the versions ever conflict, the English version controls.** If part of these Terms is found unenforceable, the rest remains in effect. Our failure to enforce a provision is not a waiver. You may not assign these Terms; we may assign them as part of a reorganization or transfer of the service. We are not responsible for delay or failure caused by events beyond our reasonable control. These Terms, together with the Standard EULA and the policies they link, are the entire agreement between you and us about Umbrix.
+
+## 16. Contact
+
+[`legal@khassinx.com`](mailto:legal@khassinx.com) · KHASSINX LLC, a Florida limited liability company. More channels at [Contact](/contact/).

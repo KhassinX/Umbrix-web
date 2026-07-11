@@ -6,15 +6,15 @@ permalink: /es/legal/requests/
 lang: es
 canonical_en: /legal/requests/
 canonical_es: /es/legal/requests/
-updated: 2026-07-02
+updated: 2026-07-11
 ---
-<!-- DRAFT — aún no publicado. -->
-
 Umbrix es software neutral. No promueve ni se opone a ninguna causa, gobierno o postura política. KHASSINX LLC cumple las leyes locales aplicables. Esta página explica cómo manejamos los dos tipos de solicitud que una autoridad puede enviar.
 
 ## Solicitudes de datos o vigilancia
 
 No hay nada que entregar. Umbrix no tiene cuentas, ni números de teléfono, ni directorio de usuarios, ni servidores nuestros en el camino del mensaje. Los mensajes están cifrados de extremo a extremo y el relevo efímero los borra al entregarlos, así que de nuestro lado no existe ningún archivo de contenido, metadatos ni relaciones de contacto que producir.
+
+Respondemos con la verdad al proceso legal válido sobre la información que efectivamente poseemos — y lo que poseemos está diseñado para ser nada. El proceso legal sobre datos en tránsito por la infraestructura de Apple (el buzón efímero de CloudKit y APNs) es asunto de Apple Inc., que es dueña de esa infraestructura y la opera. Cuando la ley de EE. UU. nos exige un reporte — como los reportes al National Center for Missing & Exploited Children ante conocimiento efectivo — cumplimos.
 
 No podemos entregar lo que no tenemos. Consulta la [Política de Privacidad](/es/legal/privacy/), el [Informe de Transparencia](/es/legal/transparency/) y el [Warrant Canary](/es/legal/canary/).
 
