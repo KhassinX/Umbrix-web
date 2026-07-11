@@ -8,7 +8,7 @@ canonical_en: /legal/availability/
 canonical_es: /es/legal/availability/
 updated: 2026-07-11
 ---
-Umbrix is distributed exclusively through the Apple App Store, and offered where we understand its private, end-to-end encrypted design to be lawful. Availability can change as laws change. We do not weaken the encryption to enter a market or to remain in one.
+Umbrix is distributed exclusively through the App Store, and offered where we understand its private, end-to-end encrypted design to be lawful. Availability can change as laws change. We do not weaken the encryption to enter a market or to remain in one.
 
 Two things can make Umbrix unavailable in a territory: our own decision not to offer it there due to legal complexity, or a verified request from a competent local authority (see [Government & Legal Requests](/legal/requests/)). This page records both, as plain fact.
 
