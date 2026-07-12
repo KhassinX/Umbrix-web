@@ -181,11 +181,15 @@
         <a href="{{ page.canonical_es | default: '/es/' | relative_url }}" hreflang="es" lang="es">ES</a>
         {%- endif -%}
       </div>
-      {%- comment -%} Umbrix = marca pública INDEPENDIENTE (Decisión #8): la superficie pública
-      solo muestra la entidad legal (© KHASSINX LLC, arriba), sin link de ecosistema.
-      Gateado por config (show_ecosystem_note) en vez de borrado, para no divergir del canon. {%- endcomment -%}
+      {%- comment -%} Nota de ecosistema (WEB_PROPERTY_SPEC §4): uniformidad en todas las apps propias
+      (decisión de Abraham 2026-07-11 — supera la Decisión #8 de marca independiente; el subdominio
+      *.khassinx.com y el © KHASSINX LLC ya declaran el parentesco). Texto + href por locale. {%- endcomment -%}
       {%- if site.show_ecosystem_note %}
-      <small class="footer-ecosystem">{{ site.ecosystem_note | default: 'Part of the' }} <a href="https://khassinx.com">KhassinX ecosystem</a></small>
+      {%- if page.lang == 'es' %}
+      <small class="footer-ecosystem">Parte del <a href="https://khassinx.com/es/">ecosistema KhassinX</a></small>
+      {%- else %}
+      <small class="footer-ecosystem">Part of the <a href="https://khassinx.com">KhassinX ecosystem</a></small>
+      {%- endif %}
       {%- endif %}
     </div>
   </footer>
