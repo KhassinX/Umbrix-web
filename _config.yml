@@ -17,7 +17,8 @@ app_tokens_css: /assets/css/umbrix-tokens.css
 # Bump para invalidar el cache del edge CF al cambiar CSS (los tokens no tienen scope de purge)
 css_version: 20260711
 
-# og_image: pendiente (share card 1200×630 desde el AppIcon.icon — track C1). Clave ausente a propósito.
+# Share card 1200×630 (track C1 resuelto 2026-07-11: icono redondeado sobre fondo de marca, PIL pipeline BRAND_SYSTEM §6)
+og_image: /assets/og/og-image-en.png
 org_logo: /assets/favicons/icon-512.png
 
 # Footer — Legal Trust Hub (WEB_PROPERTY_SPEC §10.3) + Support/Contact como páginas:

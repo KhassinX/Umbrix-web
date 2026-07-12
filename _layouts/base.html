@@ -68,12 +68,14 @@
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="{{ page.og_image_alt | default: site.title }}">
   {%- endif %}
-  <meta property="og:locale" content="{{ page.lang | default: site.lang | default: 'en' }}">
-  {%- for loc in site.locales %}{% unless loc == page.lang %}
-  <meta property="og:locale:alternate" content="{{ loc }}">{% endunless %}{%- endfor %}
+  {%- comment -%} og:locale usa el formato language_TERRITORY del protocolo OG (en_US/es_ES), NUNCA el code corto de hreflang (WEB_PROPERTY_SPEC §4.5). Web = EN+ES únicamente → par binario exacto. {%- endcomment -%}
+  {%- assign og_lang = page.lang | default: site.lang | default: 'en' -%}
+  {%- if og_lang == 'es' -%}{%- assign og_locale = 'es_ES' -%}{%- assign og_locale_alt = 'en_US' -%}{%- else -%}{%- assign og_locale = 'en_US' -%}{%- assign og_locale_alt = 'es_ES' -%}{%- endif %}
+  <meta property="og:locale" content="{{ og_locale }}">
+  <meta property="og:locale:alternate" content="{{ og_locale_alt }}">
 
-  {%- comment -%} ── X / Twitter Cards (el markup sigue siendo `twitter:*`) ── {%- endcomment -%}
-  <meta name="twitter:card" content="summary_large_image">
+  {%- comment -%} ── X / Twitter Cards (el markup sigue siendo `twitter:*`). Card grande SOLO con og_image; sin imagen degrada a summary (nunca una large card vacía). ── {%- endcomment -%}
+  <meta name="twitter:card" content="{% if og_image %}summary_large_image{% else %}summary{% endif %}">
   <meta name="twitter:title" content="{{ full_title }}">
   <meta name="twitter:description" content="{{ desc }}">
   {%- if og_image %}
@@ -110,7 +112,7 @@
   </script>
   {%- elsif site.schema_type == 'app' %}
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"MobileApplication","name":"{{ site.title }}","operatingSystem":"{{ site.app_os | default: 'iOS, iPadOS, macOS, watchOS' }}","applicationCategory":"{{ site.app_category | default: 'Utility' }}"{% if site.app_store_url %},"downloadUrl":"{{ site.app_store_url }}"{% endif %}{% if site.app_price %},"offers":{"@type":"Offer","price":"{{ site.app_price }}","priceCurrency":"{{ site.app_currency | default: 'USD' }}"}{% endif %},"publisher":{"@type":"Organization","name":"KhassinX","legalName":"KHASSINX LLC","url":"https://khassinx.com"}}
+  {"@context":"https://schema.org","@type":"MobileApplication","name":"{{ site.title }}","url":"{{ site.url }}","operatingSystem":"{{ site.app_os | default: 'iOS, iPadOS, macOS, watchOS' }}","applicationCategory":"{{ site.app_category | default: 'Utility' }}"{% if site.app_store_url %},"downloadUrl":"{{ site.app_store_url }}"{% endif %}{% if site.app_price %},"offers":{"@type":"Offer","price":"{{ site.app_price }}","priceCurrency":"{{ site.app_currency | default: 'USD' }}"}{% endif %},"publisher":{"@type":"Organization","name":"KhassinX","legalName":"KHASSINX LLC","url":"https://khassinx.com"}}
   </script>
   {%- endif %}
 
