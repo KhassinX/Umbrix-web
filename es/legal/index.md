@@ -23,3 +23,7 @@ Las preguntas sobre la app van a [Soporte](/es/support/); todos los demás canal
 Para los derechos de privacidad que tienes bajo el RGPD (UE/EEE), el Reino Unido, la LOPDGDD de España, la CCPA de California, otros estados de EE. UU. y el resto del mundo, consulta el [centro de Derechos de Privacidad](https://khassinx.com/es/legal/your-rights/) del editor.
 
 Umbrix es publicado por **KHASSINX LLC**, una sociedad de responsabilidad limitada de Florida (Estados Unidos). Contacto: [`legal@khassinx.com`](mailto:legal@khassinx.com).
+
+## Marcas comerciales
+
+Apple, iPhone, iPad, Mac, Apple Watch, App Store, CloudKit, CryptoKit, iPadOS, macOS y watchOS son marcas comerciales de Apple Inc., registradas en EE. UU. y otros países. IOS es una marca comercial o marca registrada de Cisco en EE. UU. y otros países y se utiliza bajo licencia. KhassinX y Umbrix son marcas comerciales de KHASSINX LLC. Las demás marcas comerciales pertenecen a sus respectivos propietarios.
