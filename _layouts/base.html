@@ -128,6 +128,26 @@
   {%- assign lang_key = page.lang | default: site.lang | default: 'en' -%}
   {%- assign ui = site.ui_strings[lang_key] | default: site.ui_strings.en -%}
   <a class="skip-link" href="#main">{{ ui.skip_to_main | default: 'Skip to content' }}</a>
+  {%- comment -%}
+    ── Header canónico: wordmark → home (clickable logo, la convención universal) + nav.
+    Antes faltaba el markup pese a que primitives.css ya estilaba `.site-header`/`.site-nav`,
+    así que desde una página larga (legales/soporte) no había forma visible de volver al home.
+    El link del logo es locale-aware (EN `/`, ES `/es/`). La nav reusa `footer_nav` (mismo set
+    arriba y abajo, DRY). El skip-link (arriba) salta esta nav hacia #main.
+  {%- endcomment -%}
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="{% if page.lang == 'es' %}{{ '/es/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">{{ site.title }}</a>
+      {%- assign hnav = site.footer_nav[lang_key] | default: site.footer_nav.en -%}
+      {%- if hnav %}
+      <nav class="site-nav" aria-label="{{ ui.primary_nav_label | default: 'Primary' }}">
+        {%- for item in hnav %}
+        <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        {%- endfor %}
+      </nav>
+      {%- endif %}
+    </div>
+  </header>
   <main id="main">
     {{ content }}
   </main>
