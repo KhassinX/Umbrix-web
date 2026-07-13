@@ -12,7 +12,7 @@ La mayoría de las políticas de privacidad piden confianza. Este informe está 
 
 ## La arquitectura en un párrafo
 
-Umbrix **no tiene servidores propios**. Los mensajes se cifran de extremo a extremo en tu dispositivo con un protocolo estilo Signal (acuerdo de claves X3DH + doble ratchet, con forward secrecy) construido sobre CryptoKit de Apple, con las claves privadas guardadas en el hardware seguro del dispositivo o el llavero del sistema. El texto cifrado viaja por un buzón efímero de CloudKit que borra cada mensaje al entregarlo, y APNs despierta el dispositivo del destinatario sin transportar contenido. Tu identidad es un par de claves generado localmente — no hay cuenta, ni directorio, ni registro de usuarios.
+Umbrix **no tiene servidores propios**. Los mensajes se cifran de extremo a extremo en tu dispositivo con un protocolo de cifrado moderno (acuerdo de claves X3DH + doble ratchet, con forward secrecy) construido sobre CryptoKit de Apple, con las claves privadas guardadas en el hardware seguro del dispositivo o el llavero del sistema. El texto cifrado viaja por un buzón efímero de CloudKit que borra cada mensaje al entregarlo, y APNs despierta el dispositivo del destinatario sin transportar contenido. Tu identidad es un par de claves generado localmente — no hay cuenta, ni directorio, ni registro de usuarios.
 
 ## Qué puede ver cada parte
 

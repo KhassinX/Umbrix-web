@@ -12,7 +12,7 @@ Most privacy policies ask for trust. This report is written so you need as littl
 
 ## The architecture in one paragraph
 
-Umbrix has **no servers of its own**. Messages are end-to-end encrypted on your device using a Signal-style protocol (X3DH key agreement + double ratchet, giving forward secrecy) built on Apple's CryptoKit, with private keys held in your device's secure hardware or system keychain. Ciphertext travels through an ephemeral CloudKit mailbox that deletes each message on delivery, and APNs wakes the recipient's device without carrying content. Your identity is a key pair generated locally — there is no account, no directory, and no registry of users.
+Umbrix has **no servers of its own**. Messages are end-to-end encrypted on your device using a modern encryption protocol (X3DH key agreement + double ratchet, giving forward secrecy) built on Apple's CryptoKit, with private keys held in your device's secure hardware or system keychain. Ciphertext travels through an ephemeral CloudKit mailbox that deletes each message on delivery, and APNs wakes the recipient's device without carrying content. Your identity is a key pair generated locally — there is no account, no directory, and no registry of users.
 
 ## What each party can see
 
