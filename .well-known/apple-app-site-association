@@ -5,8 +5,20 @@
         "appIDs": ["DTY56Y4N5M.com.khassinx.umbrix"],
         "components": [
           {
+            "/": "/add/",
+            "comment": "Umbrix invite links: umbrix.khassinx.com/add/#<code>. The code rides in the fragment (never sent to a server); iOS matches on the path, so THIS is the entry current links depend on."
+          },
+          {
             "/": "/add/*",
-            "comment": "Umbrix invite links: tapping umbrix.khassinx.com/add/<code> opens the app to add a contact"
+            "comment": "Legacy invites from the first betas, which put the code in the path (/add/<code>). Kept so links already shared in people's chats still open the app."
+          },
+          {
+            "/": "/es/add/",
+            "comment": "Spanish invite page, same fragment format."
+          },
+          {
+            "/": "/es/add/*",
+            "comment": "Spanish legacy invites."
           }
         ]
       }
