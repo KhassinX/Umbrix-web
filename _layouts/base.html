@@ -120,6 +120,7 @@
     ── CSS layers (orden BRAND_SYSTEM §1): Layer 1 (umbrella, solo apex) → Layer 2 (per-app rebind) → Layer 3 (primitives) ──
   {%- endcomment -%}
   {%- comment -%} ?v= cache-buster: los tokens CF actuales no tienen scope de purge; versionar la URL invalida el edge al instante. Bump al cambiar CSS. {%- endcomment -%}
+  <link rel="preload" href="/assets/fonts/geist-variable.woff2" as="font" type="font/woff2" crossorigin>
   {%- if site.umbrella_tokens %}<link rel="stylesheet" href="/assets/css/tokens.css?v={{ site.css_version | default: 1 }}">{% endif %}
   {%- if site.app_tokens_css %}<link rel="stylesheet" href="{{ site.app_tokens_css }}?v={{ site.css_version | default: 1 }}">{% endif %}
   <link rel="stylesheet" href="/assets/css/primitives.css?v={{ site.css_version | default: 1 }}">
