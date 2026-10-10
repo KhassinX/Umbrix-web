@@ -1,0 +1,25 @@
+/* Layer 2 of umbrix: its color over the portfolio system. Violet of the Umbrix brand (old umbrix-tokens.css: #B794FF on dark, #6E2DE8 on light). */
+:root {
+  --umbrix-accent: #B794FF;
+  --umbrix-accent-deep: #6E2DE8;
+  --khassinx-accent: var(--umbrix-accent);
+  --khassinx-accent-ink: var(--khassinx-ground);
+  --khassinx-accent-text: var(--umbrix-accent);
+  --khassinx-focus: var(--umbrix-accent);
+}
+
+:root[data-theme="light"] {
+  --khassinx-accent: var(--umbrix-accent-deep);
+  --khassinx-accent-ink: #FFFFFF;
+  --khassinx-accent-text: var(--umbrix-accent-deep);
+  --khassinx-focus: var(--umbrix-accent-deep);
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --khassinx-accent: var(--umbrix-accent-deep);
+    --khassinx-accent-ink: #FFFFFF;
+    --khassinx-accent-text: var(--umbrix-accent-deep);
+    --khassinx-focus: var(--umbrix-accent-deep);
+  }
+}
