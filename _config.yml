@@ -24,19 +24,7 @@ org_logo: /assets/favicons/icon-512.png
 
 # Footer — Legal Trust Hub (WEB_PROPERTY_SPEC §10.3) + Support/Contact como páginas:
 # Privacy · Terms · Legal · Security · Support · Contact.
-# (El layout no tiene header nav; el footer es la navegación del sitio.)
-nav:
-  en:
-    - title: Legal
-      url: /legal/
-    - title: Support
-      url: /support/
-  es:
-    - title: Legal
-      url: /es/legal/
-    - title: Soporte
-      url: /es/support/
-
+# Sin nav: el encabezado es sólo el wordmark; el pie es la navegación del sitio.
 footer_nav:
   en:
     - title: Privacy
