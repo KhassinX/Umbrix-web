@@ -40,7 +40,7 @@
 
   {%- assign page_title = page.title | default: site.title -%}
   {%- assign full_title = page_title -%}
-  {%- if page.title -%}{%- assign full_title = page.title | append: ' — ' | append: site.title -%}{%- endif -%}
+  {%- if page.title -%}{%- assign full_title = page.title | append: ' · ' | append: site.title -%}{%- endif -%}
   {%- comment -%} seo_title override: la HOME debe ser brand-first para el favorito (WEB_PROPERTY_SPEC §4.5). Front-matter `seo_title: "Marca — tagline corta"` gana sobre el title largo. {%- endcomment -%}
   {%- if page.seo_title -%}{%- assign full_title = page.seo_title -%}{%- endif -%}
   {%- assign desc = page.description | default: site.description -%}
