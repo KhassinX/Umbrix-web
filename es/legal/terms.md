@@ -1,6 +1,6 @@
 ---
 layout: prose
-title: Términos de Servicio
+title: Términos de servicio
 description: "Los términos que rigen tu uso de la app Umbrix y de este sitio web."
 permalink: /es/legal/terms/
 lang: es

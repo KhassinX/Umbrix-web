@@ -1,6 +1,6 @@
 ---
 layout: prose
-title: Proveedores de Infraestructura
+title: Proveedores de infraestructura
 description: "Las únicas empresas cuya infraestructura toca tráfico (cifrado) de Umbrix o sirve este sitio web."
 permalink: /es/legal/subprocessors/
 lang: es

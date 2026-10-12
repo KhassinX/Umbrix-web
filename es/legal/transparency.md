@@ -1,6 +1,6 @@
 ---
 layout: prose
-title: Informe de Transparencia
+title: Informe de transparencia
 description: "Cómo funciona Umbrix, qué podemos y no podemos ver, el modelo de amenazas y los límites honestos de nuestras protecciones."
 permalink: /es/legal/transparency/
 lang: es
