@@ -6,7 +6,7 @@ permalink: /legal/requests/
 lang: en
 canonical_en: /legal/requests/
 canonical_es: /es/legal/requests/
-updated: 2026-07-11
+updated: 2026-10-12
 ---
 Umbrix is neutral software. It does not promote or oppose any cause, government, or political position. KHASSINX LLC complies with applicable local law. This page explains how we handle the two kinds of request an authority may send.
 
@@ -34,4 +34,4 @@ Where a competent authority determines that Umbrix should not be available in it
 
 **What we do.** Once verified, we restrict the app's availability in that territory through the App Store. This is reversible: if the authority later withdraws its position, availability is restored. We record the action on the [availability page](/legal/availability/). We do not weaken the encryption for any market.
 
-We aim to acknowledge requests within five business days.
+We aim to acknowledge requests within seven business days.
