@@ -1,7 +1,7 @@
 ---
 layout: prose
 title: Privacy Policy
-description: "Umbrix collects no personal data. No account, no phone number, no analytics — and no servers of ours that could store your messages."
+description: "Umbrix collects no personal data. No account, no phone number, no analytics, and no servers of ours that could store your messages."
 permalink: /legal/privacy/
 lang: en
 canonical_en: /legal/privacy/

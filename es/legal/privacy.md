@@ -1,7 +1,7 @@
 ---
 layout: prose
-title: Política de Privacidad
-description: "Umbrix no recolecta datos personales. Sin cuenta, sin número de teléfono, sin analytics — y sin servidores nuestros que pudieran guardar tus mensajes."
+title: Política de privacidad
+description: "Umbrix no recolecta datos personales. Sin cuenta, sin número de teléfono, sin analytics y sin servidores nuestros que pudieran guardar tus mensajes."
 permalink: /es/legal/privacy/
 lang: es
 canonical_en: /legal/privacy/
