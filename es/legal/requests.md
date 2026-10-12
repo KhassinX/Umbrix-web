@@ -1,6 +1,6 @@
 ---
 layout: prose
-title: Solicitudes Gubernamentales y Legales
+title: Solicitudes gubernamentales y legales
 description: "Cómo KHASSINX LLC maneja las solicitudes gubernamentales y legales sobre Umbrix: solicitudes de datos (no tenemos nada) y solicitudes para retirar la app de un país."
 permalink: /es/legal/requests/
 lang: es
